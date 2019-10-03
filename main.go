@@ -1,19 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/Tony-Moon/Moon-Vending/vend"
+)
 
 func main(){
-	var cewmachine = machine{
-		model:    "182",
-		address:  address {
-			street : "101 Mitchell St",
-			city:    "Arlington",
-			state:   "TX",
-			zip:     "76010",
-		},
-		capacity: 100,
+	var cewmachine = vend.Machine {
+		Model:    "18239342",
+		Address:  vend.NewAddress("101 Mitchell St", "Arlington", "TX", "76010"),
+		Capacity: 100,
 	}
 
-	var p printer = cewmachine
+	var p vend.Printer = cewmachine
 	fmt.Print(p)
 }

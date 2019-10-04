@@ -18,6 +18,7 @@ func NewAddress(street string, city string, state string, zip string) *Address {
 	return &n
 }
 
+// Prints the readout address of the vending machine
 func (a Address) String() string{
 	var output string
 	output = a.street + "\n" + a.city + ", " + a.state + " " + a.zip + "\n"

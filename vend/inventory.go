@@ -15,7 +15,13 @@ func (d *Inventory) Dispense() int{
 	return d.Stock
 }
 
+// This function restocks the beverage
+func (r *Inventory) Restock(amount int) int{
+	r.Stock = r.Stock + amount
+	return r.Stock
+}
+
 // Print the readout of the row and its stock
-func (r Inventory) String() string{
-	return r.Row + " - " + r.Beverage +  " - " + strconv.Itoa(r.Stock) + " in stock.\n"
+func (p Inventory) String() string{
+	return p.Row + " - " + p.Beverage +  " - " + strconv.Itoa(p.Stock) + " in stock.\n"
 }

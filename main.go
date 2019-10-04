@@ -31,6 +31,10 @@ func main(){
 	a1p = a1
 	fmt.Print(a1p)
 
+	a1.Restock(5)
+	a1p = a1
+	fmt.Print(a1p)
+
 	// Row A1 down, but I should consider finding a way to generate the number of rows and filling them automatically
-	// I also want to make use of the dispense button. But it's late and I want to go to bed.
+
 }

@@ -10,8 +10,9 @@ type Inventory struct {
 }
 
 // This function dispenses one beverage
-func (d Inventory) Int() int{
-	return d.Stock - 1
+func (d *Inventory) Dispense() int{
+	d.Stock = d.Stock - 1
+	return d.Stock
 }
 
 // Print the readout of the row and its stock

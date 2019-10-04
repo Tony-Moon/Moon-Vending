@@ -26,7 +26,11 @@ func main(){
 	}
 	var a1p vend.Printer = a1
 	fmt.Print(a1p)
+	
+	a1.Dispense()
+	a1p = a1
+	fmt.Print(a1p)
 
 	// Row A1 down, but I should consider finding a way to generate the number of rows and filling them automatically
-	// But it's late and I want to go to bed.
+	// I also want to make use of the dispense button. But it's late and I want to go to bed.
 }
